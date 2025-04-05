@@ -75,7 +75,7 @@ public class SklepKomputerowy {
     public void wyswietlZamowieniaKlienta(int idKlienta) {
         boolean found = false;  
         for (Zamowienie zamowienie : zamowienia) {
-            // Sprawdzamy, czy zamówienie nie jest null i czy klient ma odpowiedni ID
+        
             if (zamowienie != null && zamowienie.getKlient() != null && zamowienie.getKlient().getId() == idKlienta) {
                 zamowienie.wyswietlSzczegoly();  
                 found = true;
