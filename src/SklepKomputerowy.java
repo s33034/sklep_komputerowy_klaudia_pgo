@@ -73,11 +73,11 @@ public class SklepKomputerowy {
     }
     //TODO
     public void wyswietlZamowieniaKlienta(int idKlienta) {
-        boolean found = false;  // Flaga do sprawdzenia, czy znaleziono zamówienie
+        boolean found = false;  
         for (Zamowienie zamowienie : zamowienia) {
             // Sprawdzamy, czy zamówienie nie jest null i czy klient ma odpowiedni ID
             if (zamowienie != null && zamowienie.getKlient() != null && zamowienie.getKlient().getId() == idKlienta) {
-                zamowienie.wyswietlSzczegoly();  // Wyświetlanie szczegółów zamówienia
+                zamowienie.wyswietlSzczegoly();  
                 found = true;
             }
         }
